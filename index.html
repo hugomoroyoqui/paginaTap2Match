@@ -1,0 +1,247 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Tap2Match</title>
+
+    <!-- Aqui estan las librerias -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Aqui no le mueva no lo haga compa -->
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <!-- Aqui va el logo chido -->
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <img class="android-logo-image" src="images/logo.png" width="50px" height="50px">
+          </span>
+
+          <!-- Aqui esta la barra alineada a la derecha y el buscador -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+
+          <!-- Navbar -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="project.html">Project</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="company.html">About us</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="team.html">Team</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.html">Contact us</a>
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="images/logo.png">  <!-- logo de nuevo -->
+          </span>
+        </div>
+      </div>
+
+      <!-- aqui empieza la navigation drawer de la izquierda -->
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="images/android-logo-white.png"> <!-- Aqui esta el logo de letras blancas de la navigation drawer -->
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Tap2Match</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="company.html">About us</span>
+          <a class="mdl-navigation__link" href="team.html">Team Members</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Contact us</span>
+          <a class="mdl-navigation__link" href="">Facebook</a>
+          <a class="mdl-navigation__link" href="">Gmail</a>
+          <a class="mdl-navigation__link" href="">Twitter</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Download now</span>
+        </nav>
+      </div>
+      <!-- la portada--> 
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+          <div class="logo-font android-slogan"> </div>
+          <div class="logo-font android-sub-slogan"> </div>
+          <!--<div class="logo-font android-create-character">
+            <a href=""><img src="images/andy.png"> Descarga la app aqui</a>
+          </div>
+          <!-- boton de ir hacia abajo -->
+          <a href="#screens">
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+              <i class="material-icons">expand_more</i>
+            </button>
+          </a>
+        </div>
+        <!--aqui empieza a poner las imagenes de la app-->
+        <div class="android-screen-section mdl-typography--text-center">
+          <a name="screens"></a>
+          <div class="mdl-typography--display-1-color-contrast">What can you do</div>
+          <br><br><br><br>
+          <div class="android-screens">
+            <div class="android-auto android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/nexus.jpg" >
+                <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="" style="margin-right: 150px;">Login Whit Us</a>
+              </a>
+            </div>
+            <div class="android-auto android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/messagesscreen.png">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="" style="margin-right: 150px;">Meet People</a>
+            </div>
+            <div class="android-auto android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/newsfeedscreen.png">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="" style="margin-right: 150px;">Posts</a>
+            </div>
+            <div class="android-auto android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/chatscreen.png">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="" style="margin-right: 150px;">Chat</a>
+            </div>
+            <div class="android-auto android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/nexus.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="" >Match</a>
+            </div>
+          </div>
+        </div>
+        <!--la portada de promocion-->
+        <div class="android-wear-section">
+          <div class="android-wear-band">
+            <div class="android-wear-band-text">
+              <div class="mdl-typography--display-2 mdl-typography--font-thin">Make Friends Easy And Fast</div>
+              <p class="mdl-typography--headline mdl-typography--font-thin"> Choose One
+              </p>
+              <p>
+                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
+                  Go&nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="android-customized-section">
+          <div class="android-customized-section-text">
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">The Best Social Network</div>
+            <p class="mdl-typography--font-light">
+              Available For All Android Devices
+              <br>
+              <a href="" class="android-link mdl-typography--font-light">What Are You Waiting For?</a>
+            </p>
+          </div>
+          <div class="android-customized-section-image"></div>
+        </div>
+        <!--ultimos cuadros-->
+        <div class="android-more-section">
+          <div class="android-section-title mdl-typography--display-1-color-contrast">Know More About Us</div>
+          <div class="android-card-container mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-1.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Company</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Learn About Us History</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="company.html">
+                   Click Here
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-2.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Team</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">We Are Speacialists</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="team.html">
+                   Click Here
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-4.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Documentation</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Manual Of The APP</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Click Here
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Home
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Tap2Match: © 2017 TuringLab, Mexico</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <a class="android-link mdl-typography--font-light" href="">Facebook</a>
+            <a class="android-link mdl-typography--font-light" href="">Twitter</a>
+            <a class="android-link mdl-typography--font-light" href="">Gmail</a>
+            <a class="android-link mdl-typography--font-light" href="">Policies and privacy</a>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    <a href="#" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--light-blue mdl-color-text--accent-contrast">Download</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
